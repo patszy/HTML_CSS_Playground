@@ -1,0 +1,28 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  place-items: center;
+  min-width: 70vw;
+  min-height: 50dvh;
+  margin: 100px auto;
+}
+
+div {
+  background-color: red;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+div:first-of-type {
+  grid-column: span 2;
+}
+
+/*# sourceMappingURL=main.css.map */
